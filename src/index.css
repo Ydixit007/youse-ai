@@ -49,3 +49,34 @@ h1{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+.myChat{
+  border: solid 1px #4e70a4;
+  border-radius: 10px;
+  background: radial-gradient(#436b8a, #202e3c);
+}
+
+.botChat{
+  border: solid 1px #252525;
+  border-radius: 10px;
+  background: radial-gradient(#1e1f20, #1c1b1b);;
+}
+
+input{
+  color: #ededed;
+  background: transparent;
+  border-radius: 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.myInput{
+  border: solid 1px #1a232e;
+}
+
+.myInput:focus{
+  border: solid 1px #2563eb;
+}

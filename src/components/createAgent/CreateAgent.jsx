@@ -45,8 +45,22 @@ const CreateAgent = () => {
             }
           />
         </div>
-        <div className="TrainAgent flex flex-col gap-1">
+        <div className="TrainAgent flex flex-col gap-2">
           <FormLabel label={"Train your agent on your knowledge"} />
+          <div className="buttons flex bg-[#1c2939] flex-grow-0 mr-auto divide-x divide-gray-700 rounded-md overflow-hidden border-[1px] border-gray-700">
+            <div
+              onClick={() => {}}
+              className="upload-files py-1 cursor-pointer text-center text-sm px-2 text-gray-300"
+            >
+              Upload Files
+            </div>
+            <div
+              onClick={() => {}}
+              className="use-website cursor-pointer  py-1 bg-[#111929] text-center text-sm px-2 text-gray-700"
+            >
+              Use Website
+            </div>
+          </div>
           <UploadFiles />
         </div>
       </div>
