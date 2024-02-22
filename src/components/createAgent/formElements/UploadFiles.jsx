@@ -34,9 +34,22 @@ const UploadFiles = () => {
         </span>
       </label>
       <div className="uploaded flex flex-col gap-2 mt-2 w-full max-h-[124px] overflow-y-scroll">
+        <UploadedFileCard
+          key={99999}
+          size={320000}
+          filename={"test.json"}
+          status={"failure"}
+        />
         {selectedFiles.length > 0 &&
           selectedFiles.map((file, index) => {
-            return <UploadedFileCard key={index} size={file.size} filename={file.name} status={"success"} />;
+            return (
+              <UploadedFileCard
+                key={index}
+                size={file.size}
+                filename={file.name}
+                status={"success"}
+              />
+            );
           })}
       </div>
     </div>

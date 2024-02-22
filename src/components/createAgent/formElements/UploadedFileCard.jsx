@@ -2,6 +2,7 @@ import React from "react";
 import { TbFileFilled } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
+import { LuRefreshCcw } from "react-icons/lu";
 
 const UploadedFileCard = ({
   filename,
@@ -25,7 +26,7 @@ const UploadedFileCard = ({
         {filename}
       </div>
       <div className="size text-gray-500 text-xs">
-        {Math.floor(size / 1000)}KB
+        {status === "success" && `${Math.floor(size / 1000)}KB`}
       </div>
       <div className="status">
         {status === "success" ? (
@@ -38,7 +39,14 @@ const UploadedFileCard = ({
             </p>
           </>
         ) : (
-          <></>
+          <>
+            <p className="text-xs flex items-center gap-1">
+              <span>
+                <LuRefreshCcw className="cursor-pointer" />
+              </span>{" "}
+              Try Again
+            </p>
+          </>
         )}
       </div>
       <div className="del">
