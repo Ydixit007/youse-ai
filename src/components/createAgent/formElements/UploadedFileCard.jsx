@@ -42,7 +42,7 @@ const UploadedFileCard = ({
           <>
             <p className="text-xs flex items-center gap-1">
               <span>
-                <LuRefreshCcw className="cursor-pointer" />
+                <LuRefreshCcw className="cursor-pointer text-gray-400" />
               </span>{" "}
               Try Again
             </p>
@@ -52,7 +52,7 @@ const UploadedFileCard = ({
       <div className="del">
         <FaTrashAlt
           onClick={DeleteFile}
-          className="text-gray-300 cursor-pointer"
+          className="text-gray-400 cursor-pointer"
         />
       </div>
     </div>

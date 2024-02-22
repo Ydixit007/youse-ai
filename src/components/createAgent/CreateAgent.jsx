@@ -11,7 +11,7 @@ const CreateAgent = () => {
 
   return (
     <main className="createAgent p-4 bg-[#141414] mt-5 rounded-md h-full relative">
-      <div className="form w-full flex flex-col gap-3">
+      <div className="form w-full flex flex-col gap-2">
         <div className="AgentName flex flex-col gap-1">
           <FormLabel label={"Agent Name"} />
           <FormInput

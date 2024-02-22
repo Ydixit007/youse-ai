@@ -21,7 +21,7 @@ const FormInput = ({
     return (
       <textarea
         placeholder={placeholder}
-        rows="4"
+        rows="3"
         cols="50"
         type="text"
         className="bg-[#101010] px-2 py-3 rounded-md text-gray-400 text-sm placeholder:text-sm placeholder:text-gray-500 outline-none border-[1px] border-gray-900"
